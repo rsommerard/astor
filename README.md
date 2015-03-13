@@ -1,5 +1,8 @@
 This project is available here: https://github.com/SpoonLabs/astor
 
+Help:
+java -cp <location>/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -help
+
 If you use Astor, please cite this technical report:
 
 Matias Martinez, Martin Monperrus. "ASTOR: Evolutionary Automatic Software Repair for Java". Technical Report hal-01075976, Inria; 2014. 
