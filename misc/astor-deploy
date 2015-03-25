@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in `seq 195 200`
+do
+  echo "Launching astor ${i} ..."
+  oarsub -l walltime=01:00:00 -O ~/astor/logs/${i}/${i}.stdout -E ~/astor/logs/${i}/${i}.stderr "~/astor/astor-node"
+done
+echo "Done."

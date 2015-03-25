@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cp -r ~/astor/Math-0c1ef/ /tmp/
+cd /tmp/Math-0c1ef/
+
+cp ~/astor/astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar .
+
+java -cp astor-0.0.2-SNAPSHOT-jar-with-dependencies.jar fr.inria.main.evolution.MainjGenProg -location ./ -dependencies lib/ -failing org.apache.commons.math3.primes.PrimesTest -package org.apache.commons -jvm4testexecution /usr/lib/jvm/java-7-openjdk-amd64/bin -maxgen 100
+
+cd /tmp/
+rm -rf Math-0c1ef/
